@@ -14,6 +14,7 @@ __pycache__/
 # Large raw caches and external cloned repositories
 # Keep data/ocib_tasks*.jsonl tracked, but do not push raw downloaded corpora.
 data/raw/
+rawdata/
 
 # Experiment run artifacts and local backups
 runs/
