@@ -1,0 +1,37 @@
+{
+  "data_dir": "data",
+  "runs_dir": "runs",
+  "results_dir": "results",
+  "tasks_manifest": "data/ocib_tasks.jsonl",
+  "handcrafted_tasks": "ocib_automation/tasks.handcrafted.jsonl",
+  "openclaw_command_template": "bash ocib_automation/scripts/run_openclaw_in_docker_template.sh {instruction_file} {workspace} {trace_file} {condition} {max_steps}",
+  "recover_openclaw_trace": false,
+  "openclaw_state_dir": "~/.openclaw-ocib-direct",
+  "preserve_placeholder_trace": true,
+  "sandbox_backend": "docker",
+  "shell_timeout_seconds": 900,
+  "resume_completed": true,
+  "conditions": [
+    "G1",
+    "G2",
+    "G3",
+    "G4"
+  ],
+  "memory_modes_for_long_conditions": [
+    "off",
+    "on",
+    "null"
+  ],
+  "memory_prefix_lengths": [
+    0,
+    10,
+    25
+  ],
+  "max_steps": {
+    "short": 15,
+    "long": 60
+  },
+  "real_os_requires_sandbox": true,
+  "real_os_requires_docker": true,
+  "fail_on_missing_openclaw_trace": true
+}

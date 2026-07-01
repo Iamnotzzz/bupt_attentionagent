@@ -1,0 +1,32 @@
+# Python / local environment
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local agent/editor state
+.agents/
+.codex/
+.openclaw*/
+
+# Large raw caches and external cloned repositories
+# Keep data/ocib_tasks*.jsonl tracked, but do not push raw downloaded corpora.
+data/raw/
+
+# Experiment run artifacts and local backups
+runs/
+runs_rejudged/
+result/
+backups/
+
+# Local proxy/runtime logs
+*.log
+*.pid
+xiaomi_proxy.log
+xiaomi_proxy.pid
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
